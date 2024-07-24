@@ -1,0 +1,14 @@
+@import '../SRC/config';
+@import '../SRC/button';
+@import '../SRC/utils';
+
+
+*{
+    @include reset-pm();
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primary-color;
+
+}
