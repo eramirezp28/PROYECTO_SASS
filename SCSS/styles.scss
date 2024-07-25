@@ -37,3 +37,22 @@ h3{
     background-image: url(../img/fondo.jpg);
     background-size: 100% 100%;
 }
+ul{
+    @include reset-pm();
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li{
+        a{
+            @include btn($background-color:$terciary-color,
+            $color:$font-color,
+            $bold:'true');
+
+            &:hover{
+                @include btn($secondary-color,$terciary-color ,'false' );
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+}
